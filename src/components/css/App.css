@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap") ;
+
+body {
+    background-image: url("../img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Montserrat";
+}
+
+.main {
+    max-width: 960px;
+    min-height: 100vh;
+    margin:0px auto;
+    padding:opx 15px;
+}
+
+.Header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px 0px;
+}
+
+.notes-title {
+    color:#fff;
+    font-weight: 400;
+    font-size: 38px;
+    font-family: "Montserrat";
+}

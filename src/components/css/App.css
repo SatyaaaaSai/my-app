@@ -1,30 +1,82 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap") ;
+/* .weather-app {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .weather-details {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+  }
 
-body {
-    background-image: url("../img/background.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: "Montserrat";
-}
-
-.main {
-    max-width: 960px;
-    min-height: 100vh;
-    margin:0px auto;
-    padding:opx 15px;
-}
-
-.Header {
+  .weather-details {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    margin: 10px 0px;
+    flex-direction: column;
+  }
+  
+  .weather-details img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  
+  .weather-app {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .weather-details {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .weather-details img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .weather-app {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .weather-details {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .weather-details img {
+    width: 50px;
+    height: 50px;
+  } */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
 }
 
-.notes-title {
-    color:#fff;
-    font-weight: 400;
-    font-size: 38px;
-    font-family: "Montserrat";
+body {
+    background-image: linear-gradient(#ffefd5,#fff);
+    background-repeat: no-repeat;
+    height: 99.3vh;
+}
+
+.weather-app {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 380px;
+        background: white;
+        padding: 20px 10px;
+        border-radius: 4px;
+        box-shadow: rgb(85,85,85) 0px 2px 3px 2px;
 }

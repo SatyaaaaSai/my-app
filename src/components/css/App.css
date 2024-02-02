@@ -67,7 +67,14 @@
 body {
     background-image: linear-gradient(#ffefd5,#fff);
     background-repeat: no-repeat;
-    height: 99.3vh;
+    /* height: 60.3vh; */
+   
+}
+.mainContainer{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    place-items: center;
 }
 
 .weather-app {
@@ -80,3 +87,48 @@ body {
         border-radius: 4px;
         box-shadow: rgb(85,85,85) 0px 2px 3px 2px;
 }
+
+.txt-field{
+    display: flex;
+    
+}
+.input-box {
+    outline: none;
+    border: 1px solid black;
+}
+.search-btn {
+    height: 17px;
+    padding-bottom: 16px;
+
+}
+/* 
+.toggle-button {
+    appearance: none;
+    background-color: #ccc;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    outline: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+  }
+  
+  .toggle-button.active {
+    background-color: #4caf50;
+  }
+  
+  .toggle-button:before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+  }
+  
+  .toggle-button.active:before {
+    transform: translateX(20px);
+  } */
+  

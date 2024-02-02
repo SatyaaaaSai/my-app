@@ -47,8 +47,9 @@ const WeatherForecast = ({ city }) => {
                   <h1>{error}</h1>
               </div>
       ) : <div>
-      <h1>5-Day Weather Forecast for {city}</h1>
-      <button onClick={toggleTemperatureUnit}>Toggle Temperature Unit</button>
+      
+      <h1>5-Day Weather Forecast for {city.toUpperCase()}</h1>
+      <button onClick={toggleTemperatureUnit} className='convert-button'>Toggle Temperature Unit</button>
       <div className="forecast-container">
         {forecastData.map((item) => (
           <div key={item.dt} className="forecast-item">

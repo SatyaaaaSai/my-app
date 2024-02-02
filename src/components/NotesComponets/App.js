@@ -1,5 +1,10 @@
 import React, { useState } from "react";
 import { WiHumidity } from "react-icons/wi";
+import { FaTemperatureHigh } from "react-icons/fa";
+import { FaTemperatureArrowDown } from "react-icons/fa6";
+import { FaTemperatureArrowUp } from "react-icons/fa6";
+import { WiNightAltSnowWind } from "react-icons/wi";
+import { TiWeatherCloudy } from "react-icons/ti";
 import "./WeatherForecast";
 import WeatherForecast from "./WeatherForecast";
 const API_KEY = "625023c8b35cda33d63e88971f9ecf94";
@@ -91,7 +96,7 @@ function App() {
                 <center><span className="city-text">{weatherData.name.toUpperCase()}</span></center>
                 <div className="weather-data">
                   <div className="column">
-                    <WiHumidity />
+                    <FaTemperatureHigh className="image"/>
                     <span className="span">
                       {isCelcius
                         ? `${weatherData.main.temp}°C`
@@ -100,7 +105,7 @@ function App() {
                     </span>
                   </div>
                   <div className="column">
-                    <WiHumidity />
+                  <FaTemperatureArrowUp className="image"/>
                     <span className="span">
                       {isCelcius
                         ? `${weatherData.main.temp_min}°C`
@@ -109,7 +114,7 @@ function App() {
                     </span>
                   </div>
                   <div className="column">
-                    <WiHumidity />
+                    <FaTemperatureArrowDown className="image"/>
                     <span className="span">
                       {isCelcius
                         ? `${weatherData.main.temp_max}°C`
@@ -119,26 +124,27 @@ function App() {
                     </span>
                   </div>
                   <div className="column">
-                    <WiHumidity />
+                  <WiHumidity className="image"/>
                     <span className="span">
                       {weatherData.main.humidity}%<span>Humidity</span>
                     </span>
                   </div>
                   <div className="column">
-                    <WiHumidity />
+                  <WiNightAltSnowWind className="image"/>
                     <span className="span">
                       {weatherData.wind.speed} m/s
                       <span>Wind Speed </span>
                     </span>
                   </div>
                   <div className="column">
-                    <WiHumidity />
+                    <TiWeatherCloudy className="image" />
                     <span className="span">
                       {weatherData.weather[0].description}
                       <span>Weather</span>
                     </span>
                   </div>
-                  <div>
+                  </div>
+                  <div className="faren-button">
                     <button
                       onClick={toggleTemperatureUnit}
                       className="convert-button"
@@ -154,10 +160,10 @@ function App() {
                       }
                       onClick={handleToggleForecast}
                     >
-                      {forecast ? "Hide" : "Show"}
+                      
                     </button>
                   </div>
-                </div>
+                
                 <div>
                   <div>
                     {forecast && <WeatherForecast city={forecastCity} />}
